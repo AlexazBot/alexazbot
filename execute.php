@@ -21,36 +21,15 @@ $text = strtolower($text);
 
 header("Content-Type: application/json");
 
-include "comand.php";
-
-
-
-
-
-$response = 'ciao';
-
+$response = '';
 
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
  $response = "Ciao " . $firstname . ", benvenuto!";
 }
-/*
 else if($text=="dio cane"){
  $response = "Qui siamo cattolici praticanti!";
 }
-*/
-
-
-foreach($comand as $indice => $valore) {
-  if($text==$indice){
-    $response=$valore;
-  }
-  else{
-    $response="Comando non trovato";
-}
-
-
-
 
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";

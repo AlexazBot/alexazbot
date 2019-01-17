@@ -23,12 +23,12 @@ header("Content-Type: application/json");
 
 $response = '';
 
-if(strpos($text, "/start") === 0 || $text=="ciao")
+if(strpos($text, "/start") === 0)
 {
- $response = "Ciao " . $firstname . ", benvenuto!";
-}
-else if($text=="dio cane"){
- $response = "Qui siamo cattolici praticanti!";
+ $response = "Ciao " . $firstname . ", benvenuto!" . "<br/> . "Questi sono i miei comandi: <br/>";
+ foreach($comandi as $testo => $risposta){
+    $response += $testo . "<br/>";
+  }
 }
 
 

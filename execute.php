@@ -28,6 +28,6 @@ if(strpos($text, "/start") === 0 || $text=="ciao")
 }
 
 
-$parameters = array('chat_id' => $chatId, "text" => $text);
+$parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);

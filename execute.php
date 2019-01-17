@@ -26,14 +26,8 @@ $response = '';
 
 if(strpos($text, "/start") === 0)
 {
- //$response = "Ciao " . $firstname . ", benvenuto!" . "<br/>" . "Questi sono i miei comandi: <br/>";
- foreach($comandi as $testo => $risposta){
-    $response += $testo . "<br/>";
-  }
+ $response = "Ciao " . $firstname . ", benvenuto!";
 }
-
-
-
 
 foreach($comandi as $testo => $risposta){
   if($testo==$text){

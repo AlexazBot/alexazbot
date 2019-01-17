@@ -1,12 +1,11 @@
 <?php
 
-  require "execute.php";
-
   $comandi = array(
-    "ciao" => "Ciao! " . $firstname . ", Benvenuto!",
-    "chi sei" => "Sono Alexa",
+    "ciao" => "Ciao!",
+    "ciao" => "Hey!",
+    "chi sei" => "Sono Alexaz!",
     "come stai" => "Molto bene grazie",
-    "che ore sono" => date("H:i"),
-    "che giorno è" => date("d/m/y")
+    "che ore sono" => "Sono le ore " . date("H:i"),
+    "che giorno è" => "Oggi è il giorno " . date("d/m/y")
   );
 ?>

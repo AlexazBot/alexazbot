@@ -29,11 +29,12 @@ include "comand.php";
 
 $response = '';
 
-/*
+
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
  $response = "Ciao " . $firstname . ", benvenuto!";
 }
+/*
 else if($text=="dio cane"){
  $response = "Qui siamo cattolici praticanti!";
 }

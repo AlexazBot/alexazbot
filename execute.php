@@ -31,6 +31,15 @@ else if($text=="dio cane"){
  $response = "Qui siamo cattolici praticanti!";
 }
 
+
+require "comand.php";
+
+foreach($comandi as $testo => $risposta){
+  if($testo==$text){
+    $response=$risposta;
+  }
+}
+
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);

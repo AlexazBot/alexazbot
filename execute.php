@@ -21,7 +21,7 @@ $text = strtolower($text);
 
 header("Content-Type: application/json");
 
-require "comand.php";
+require "command.php";
 $response = '';
 
 if(strpos($text, "/start") === 0)

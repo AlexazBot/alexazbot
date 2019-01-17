@@ -27,7 +27,7 @@ include "comand.php";
 
 
 
-$response = '';
+$response = 'ciao';
 
 
 if(strpos($text, "/start") === 0 || $text=="ciao")

@@ -21,6 +21,7 @@ $text = strtolower($text);
 
 header("Content-Type: application/json");
 
+require "comand.php";
 $response = '';
 
 if(strpos($text, "/start") === 0)
@@ -32,7 +33,7 @@ if(strpos($text, "/start") === 0)
 }
 
 
-require "comand.php";
+
 
 foreach($comandi as $testo => $risposta){
   if($testo==$text){

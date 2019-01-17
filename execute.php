@@ -26,6 +26,9 @@ if(strpos($text, "/start") === 0 || $text=="ciao")
 {
  $response = "Ciao " . $firstname . ", benvenuto!";
 }
+else if($text=="Porco dio"){
+ $response = "Qui siamo cattolici praticanti!";
+}
 
 
 $parameters = array('chat_id' => $chatId, "text" => $response);

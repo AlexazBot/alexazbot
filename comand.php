@@ -1,6 +1,9 @@
 <?php
+
+  require "execute.php";
+
   $comandi = array(
-    "ciao" => "Ciao!",
+    "ciao" => "Ciao! " . $firstname . ", Benvenuto!",
     "chi sei" => "Sono Alexa",
     "come stai" => "Molto bene grazie",
     "che ore sono" => date("H:i"),

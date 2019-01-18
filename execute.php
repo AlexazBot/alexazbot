@@ -23,6 +23,7 @@ header("Content-Type: application/json");
 
 require "command.php";
 $response = '';
+date_default_timezone_set('Europe/Rome');
 
 if(strpos($text, "/start") === 0)
 {

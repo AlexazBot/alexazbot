@@ -31,7 +31,7 @@ if(strpos($text, "/start") === 0)
 }
 
 foreach($comandi as $testo => $risposta){
-  if($testo==$text){
+  if(strpos($text, $testo) === 0){
     $response=$risposta;
   }
 }

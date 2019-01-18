@@ -3,7 +3,7 @@
   $comandi = array(
     "ciao" => "Ciao!",
     "hey" => "Hey!",
-    "chi sei" => "Sono <h1>Alexaz!</h1>",
+    "chi sei" => "Sono Alexaz!",
     "come stai" => "Molto bene grazie",
     "che ore sono" => "Sono le ore " . date("H:i"),
     "che ora è" => "Sono le ore " . date("H:i"),

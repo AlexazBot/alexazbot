@@ -20,10 +20,10 @@ $text = trim($text);
 $text = strtolower($text);
 
 header("Content-Type: application/json");
+date_default_timezone_set('Europe/Rome');
 
 require "command.php";
 $response = '';
-date_default_timezone_set('Europe/Rome');
 
 if(strpos($text, "/start") === 0)
 {

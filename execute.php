@@ -23,7 +23,7 @@ header("Content-Type: application/json");
 date_default_timezone_set('Europe/Rome');
 
 require "command.php";
-$response = '';
+$response = 'comando non trovato';
 
 if(strpos($text, "/start") === 0)
 {
@@ -31,7 +31,7 @@ if(strpos($text, "/start") === 0)
 }
 
 foreach($comandi as $testo => $risposta){
-  if(strpos($text, $testo) === false){}else{
+  if(!strpos($text, $testo) === false){
     $response=$risposta;
   }
 }

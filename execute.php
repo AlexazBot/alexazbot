@@ -18,19 +18,7 @@ $text = isset($message['text']) ? $message['text'] : "";
 
 $text = trim($text);
 $text = strtolower($text);
-require "connessione.php";
 
-
-	if(!$connessione->query("INSERT INTO Utenti (firstname, lastname, username)
-						VALUES ('Nome1', 'Cognome1', 'User1')"))
-	{
-		echo "Errore nella query: " . $connessione->error . ".";
-	}
-	else{
-		echo "Inserimenti effettuati correttamente.";
-	}
-	
-	$connessione->close();	
 
 header("Content-Type: application/json");
 date_default_timezone_set('Europe/Rome');

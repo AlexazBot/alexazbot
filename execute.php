@@ -21,21 +21,16 @@ $text = strtolower($text);
 require "connessione.php";
 
 
-<?php
-	require "connessione.php";
+if(!$connessione->query("INSERT INTO Utenti (firstname, lastname, username) 
+ VALUES ( " . $firstname . ", " . $lastname . ", ". $username . ")")
+{
+	echo "Errore nella query: " . $connessione->error . ".";
+}
+else{
+	echo "Inserimenti effettuati correttamente.";
+}
 	
-	if(!$connessione->query("INSERT INTO Utenti (firstname, lastname, username) 
-  VALUES ( " . $firstname . ", " . $lastname . ", ". $username . ")")
-	{
-		echo "Errore nella query: " . $connessione->error . ".";
-	}
-	else{
-		echo "Inserimenti effettuati correttamente.";
-	}
-	
-	$connessione->close();					
-?>
-
+$connessione->close();		
 
 
 header("Content-Type: application/json");

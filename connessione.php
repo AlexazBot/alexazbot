@@ -1,8 +1,8 @@
 <?php
-	$host= "localhost";
-	$user="root";
-	$password="";
-	$db = "nuova_rubrica";
+	$host= "148.251.192.210";
+	$user="andreaco_andrez";
+	$password="Alexaz20195ID";
+	$db = "andreaco_alexaz";
 	
 	$connessione = new mysqli($host, $user, $password, $db);
 	

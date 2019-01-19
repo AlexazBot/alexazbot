@@ -18,6 +18,7 @@ $text = isset($message['text']) ? $message['text'] : "";
 
 $text = trim($text);
 $text = strtolower($text);
+require "connessione.php";
 
 header("Content-Type: application/json");
 date_default_timezone_set('Europe/Rome');

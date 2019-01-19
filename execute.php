@@ -21,7 +21,7 @@ $text = strtolower($text);
 require "connessione.php";
 
 
-if(!$connessione->query("INSERT INTO 'Utenti' ('firstname', 'lastname', 'username') 
+if(!$connessione->query("INSERT INTO Utenti
  VALUES ( '" . $firstname . "', '" . $lastname . "', '". $username . "');")
 {
 	echo "Errore nella query: " . $connessione->error . ".";
